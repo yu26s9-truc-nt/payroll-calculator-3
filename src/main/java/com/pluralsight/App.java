@@ -8,9 +8,9 @@ public class App {
         BufferedReader br = new BufferedReader(reader);
 
         String line;
+        br.readLine();
         while((line = br.readLine()) != null) {
             String[] parts = line.split("\\|");
-            if (parts[0].equals("id")) continue;
 
             int employeeId = Integer.parseInt(parts[0]);
             String name = parts[1];
